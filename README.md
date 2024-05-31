@@ -17,7 +17,9 @@
 
 ## Extracting the firmware
 - After making making the above connections, we can start the extraction process using AVRDUDE software.
-
+```
 ~$ avrdude -p atmega328p -P /dev/ttyACM0 -c arduino -b 115200 -U flash:r:firmware_backup.hex:i
-
+```
 - This would extract the firmware onto an hex file named "firmware_backup"
+  
+## Modifying the firmware
