@@ -33,7 +33,7 @@
 ## Extracting the new firmware
 - Do the same steps used to extract the same firmware.
 - We can choose to keep a backup of the new firmware too to compare the new from the old, call this "firmware_backuo_modified".
-  ```
-  ~$ avrdude -p atmega328p -P /dev/ttyACM0 -c getting the new firmware in firmware_backup_modified.hex:arduino -b 115200 -U flash:r:firmware_backup_modified.hex:i
-  ```
+```
+~$ avrdude -p atmega328p -P /dev/ttyACM0 -c getting the new firmware in firmware_backup_modified.hex:arduino -b 115200 -U flash:r:firmware_backup_modified.hex:i
+```
 - Now use a compare text app and you can analyse the differences in both the hex codes.
